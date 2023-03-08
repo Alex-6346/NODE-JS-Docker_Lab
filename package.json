@@ -1,0 +1,20 @@
+{
+  "name": "node-js-docker_lab",
+  "version": "1.0.0",
+  "description": "docker lab app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client \" "
+  },
+  "author": "Oleksandr Kotkov",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21"
+  }
+}
